@@ -10,4 +10,4 @@ services:
             capabilities: [gpu]
     container_name: rag-from-scratch
     ports:
-      - "8888:8888"
+      - "8000:8888"
