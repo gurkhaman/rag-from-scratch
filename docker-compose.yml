@@ -1,0 +1,13 @@
+services:
+  rag-from-scratch:
+    image: quay.io/jupyter/pytorch-notebook:cuda12-python-3.11
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['0', '1', '2']
+            capabilities: [gpu]
+    container_name: rag-from-scratch
+    ports:
+      - "8888:8888"
