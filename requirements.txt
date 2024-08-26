@@ -5,3 +5,7 @@ langchainhub
 chromadb
 langchain
 python-dotenv
+youtube-transcript-api 
+pytube
+ragatouille
+cohere
